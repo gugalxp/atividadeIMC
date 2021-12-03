@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculadora IMC</title>
+
+    <style>
+        body {
+            background-color: rgb(255, 252, 211);
+        }
+        
+        #resultadoIMC {
+            margin-top: 3rem;
+            background-color: rgb(245, 204, 20);
+            height: 3rem;
+            width: 9rem;
+            padding: 2rem;
+            font-weight: 60;
+            font-size: 25px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        
+        input {
+            height: 2rem;
+            width: 15rem;
+        }
+    </style>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+
+    <form method="POST" onsubmit="return calcular(event)">
+
+        <label for="peso">Peso</label>
+        <input name="peso" id="peso" type="text" placeholder="Exemplo: 90">
+
+        <label for="altura">Altura</label>
+        <input name="altura" id="altura" type="text" placeholder="Exemplo: 1.82">
+
+        <input type="submit" value="Calcular IMC">
+
+    </form>
+
+    <div id="resultadoIMC"></div>
+    <div id="statusIMC"></div>
+
+</body>
+
+</html>
